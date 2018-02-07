@@ -797,6 +797,17 @@ h1 {
         flex-basis:45%;
         margin-bottom: 3%;
     }
+
+    .five {
+        min-height: 50vh;
+        height: auto;
+    }
+
+    .five .scene img:nth-child(2) {
+        bottom: 0;
+    }
+
+
 }
 
 /* sm-размер (<=768px) */
