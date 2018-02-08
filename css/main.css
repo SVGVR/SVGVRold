@@ -559,7 +559,7 @@ h1 {
     width: 100%;
     z-index: 3;
     opacity: 0.7;
-    top: -10%;
+    top: -7%;
     -webkit-animation: cloudMove 40s infinite linear;
     -o-animation: cloudMove 40s infinite linear;
     animation: cloudMove 40s infinite linear;
@@ -595,7 +595,7 @@ h1 {
 
 .footer .row .col .contacts-box {
     background-color: rgba(255,255,255,0.9);
-    width: 50%;
+    width: 60%;
     height: 100%;
     z-index: 1;
     display: inline-block;
@@ -638,10 +638,10 @@ h1 {
 }
 
 .footer .left-hand {
-    left: 7.77%;
+    left: 2.6%;
 }
 .footer .right-hand{
-    right: 7.77%;
+    right: 2.6%;
 }
 
 @-webkit-keyframes cloudMove {
@@ -756,6 +756,7 @@ h1 {
     -ms-transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
     -o-transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
     transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+    z-index: 100;
 }
 
 
@@ -798,17 +799,28 @@ h1 {
         margin-bottom: 3%;
     }
 
-    .five {
-        min-height: 50vh;
-        height: auto;
-    }
 
     .five .scene img:nth-child(2) {
         bottom: 0;
     }
 
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (orientation : portrait) {
+    /* Планшет портретная ориентация */
+
+    .five .scene {
+        min-height: 50vh;
+    }
+
+    .three {
+        min-height: 50vh;
+    }
 
 }
+
 
 /* sm-размер (<=768px) */
 @media (max-width: 767px) {
@@ -835,9 +847,14 @@ h1 {
         float: none;
         text-align: center;
     }
+    .three {
+        min-height: 50vh;
+        height: auto !important;
 
-    .five .scene img:nth-child(2) {
-        bottom: 0;
+    }
+    .four,
+    .five {
+        display: none;
     }
 
 }
@@ -898,10 +915,6 @@ h1 {
         margin-bottom: 5%;
     }
 
-    .four,
-    .five {
-        display: none;
-    }
 
     .footer .contacts-box h3 {
         font-size: 0.9em;
