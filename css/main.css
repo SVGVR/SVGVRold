@@ -772,6 +772,29 @@ h1 {
     padding-top: 80px;
 }
 
+.show-sample {
+    font-size:1.4em;
+    font-family:"Times New Roman", sans-serif !important;
+    text-align: center;
+
+}
+
+.show-sample p {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.show-sample .alert {
+    color: red;
+}
+
+.template {
+    width: 100%;
+}
+
+.vid {
+    width: 90%;
+}
 
 /* ==========================================================================
    Media Queries

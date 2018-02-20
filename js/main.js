@@ -111,3 +111,4 @@ closeButton.addEventListener("click", toggleModal);
 window.addEventListener("click", windowOnClick);
 
 $(document).ready(toggleModal());
+

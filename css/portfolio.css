@@ -1,0 +1,64 @@
+.button {
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: black;
+    padding: 0 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin-top: 5%;
+    overflow: hidden;
+    position: relative;
+    font-family:'Play-Regular', serif;
+    color: white;
+    margin-bottom: 5%;
+}
+
+.hover-effect {
+    -webkit-transform: perspective(1px) translateZ(0);
+    -moz-transform: perspective(1px) translateZ(0);
+    -ms-transform: perspective(1px) translateZ(0);
+    -o-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+}
+.hover-effect:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    background: lime;
+    height: 3px;
+    -webkit-transition: all 250ms linear;
+    -moz-transition: all 250ms linear;
+    -ms-transition: all 250ms linear;
+    -o-transition: all 250ms linear;
+    transition: all 250ms linear;
+}
+.hover-effect:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    top: 0;
+    background: lime;
+    height: 3px;
+    -webkit-transition: all 250ms linear;
+    -moz-transition: all 250ms linear;
+    -ms-transition: all 250ms linear;
+    -o-transition: all 250ms linear;
+    transition: all 250ms linear;
+}
+
+.hover-effect:hover:before,
+.hover-effect:focus:before,
+.hover-effect:active:before,
+.hover-effect:active:after,
+.hover-effect:focus:after,
+.hover-effect:hover:after {
+    left: 0;
+    right: 0;
+}
