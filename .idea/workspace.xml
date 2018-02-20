@@ -23,8 +23,8 @@
       <file leaf-file-name="portfolio-fitness.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/portfolio-fitness.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="40" column="56" lean-forward="true" selection-start-line="40" selection-start-column="56" selection-end-line="40" selection-end-column="56" />
+            <state relative-caret-position="245">
+              <caret line="38" column="70" lean-forward="false" selection-start-line="38" selection-start-column="70" selection-end-line="38" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -153,6 +153,11 @@
               <item name="SVGVR.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="SVGVR.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SVGVR.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -203,7 +208,7 @@
       <workItem from="1518034972762" duration="1596000" />
       <workItem from="1518092085088" duration="2294000" />
       <workItem from="1518181265099" duration="97000" />
-      <workItem from="1519116448442" duration="6002000" />
+      <workItem from="1519116448442" duration="6773000" />
     </task>
     <task id="LOCAL-00001" summary="fix">
       <created>1518017967109</created>
@@ -230,7 +235,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66831000" />
+    <option name="totallyTimeSpent" value="67602000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1045" extended-state="6" />
@@ -576,8 +581,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/portfolio-fitness.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="40" column="56" lean-forward="true" selection-start-line="40" selection-start-column="56" selection-end-line="40" selection-end-column="56" />
+        <state relative-caret-position="245">
+          <caret line="38" column="70" lean-forward="false" selection-start-line="38" selection-start-column="70" selection-end-line="38" selection-end-column="70" />
           <folding />
         </state>
       </provider>
