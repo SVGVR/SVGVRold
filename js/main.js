@@ -112,3 +112,5 @@ window.addEventListener("click", windowOnClick);
 
 $(document).ready(toggleModal());
 
+
+$("video[autoplay]").each(function(){ this.play(); });
