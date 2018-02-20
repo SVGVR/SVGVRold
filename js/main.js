@@ -110,7 +110,10 @@ function windowOnClick(event) {
 closeButton.addEventListener("click", toggleModal);
 window.addEventListener("click", windowOnClick);
 
-$(document).ready(toggleModal());
+$('.function-disabled').on('click', function (e) {
+    e.preventDefault();
+    toggleModal();
+});
 
 
 $("video[autoplay]").each(function(){ this.play(); });
