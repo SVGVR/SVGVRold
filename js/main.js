@@ -117,3 +117,46 @@ $('.function-disabled').on('click', function (e) {
 
 
 $("video[autoplay]").each(function(){ this.play(); });
+
+
+/**
+ * Buttons for animation
+ * @type {*|jQuery|HTMLElement}
+ */
+var button = $('.show-on-click');
+button.on('click', function (e) {
+    e.preventDefault();
+    if ( $(this).hasClass("show-parallax") ) {
+        $('.section.five').slideToggle("slow");
+        $('.section.font-animation').slideUp("fast");
+        $('.section.counter').slideUp("fast");
+    }
+    else if ( $(this).hasClass("show-font-animation") ) {
+        $('.section.font-animation').slideToggle("slow");
+        $('.section.five').slideUp("fast");
+        $('.section.counter').slideUp("fast")
+    }else {
+        $('.section.counter').slideToggle('slow');
+        $('.section.font-animation').slideUp("fast");
+        $('.section.five').slideUp("fast");
+        //Counter
+        $('.counting').each(function() {
+            var $this = $(this),
+                countTo = $this.attr('data-count');
+            $({ countNum: $this.text()}).animate({ countNum: countTo },
+                {   duration: 3000,
+                    easing:'linear',
+                    step: function() {
+                        $this.text(Math.floor(this.countNum));
+                    },
+                    complete: function() {
+                        $this.text(this.countNum);
+                    }
+                });
+        });
+    }
+});
+
+
+
+
